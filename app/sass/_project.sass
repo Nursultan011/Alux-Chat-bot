@@ -1,0 +1,95 @@
+.project
+    &__inner
+        padding-top: 120px
+        padding-bottom: 120px
+    &__date
+        font-size: 1.5rem
+        font-weight: 500
+        line-height: 64px
+        color: $black
+        margin-bottom: 20px
+    .title
+        text-align: left
+        margin-bottom: 60px
+    &__wrap
+    &__title
+        font-weight: 600
+        line-height: 64px
+        color: $black
+        font-size: 1.5rem
+        margin-bottom: 8px
+    &__descr
+        font-size: 1rem
+        line-height: 30px
+        font-weight: 500
+        color: $black
+
+.projectImg
+    position: relative
+    background: #FAFAFA
+    &__bg1, &__bg2
+        position: absolute
+    &__bg1
+        right: 0
+        top: 0
+    &__bg2
+        left: 0
+        bottom: 0
+    &__inner
+        padding-top: 140px
+        padding-bottom: 140px
+    &__wrap
+        position: relative
+    &__circle
+        display: flex
+        justify-content: center
+    &__img
+        top: -7%
+        left: 34%
+        transform: (-50%, -50%)
+        position: absolute
+        background: #C4C4C4
+        border-radius: 32px
+        width: 360px
+        height: 720px
+
+@media (max-width: 767px)
+    .project
+        &__wrap
+            & + .project__wrap
+                margin-top: 40px !important
+
+    .projectImg
+        overflow: hidden
+        &__bg1, &__bg2
+            img
+                width: 30%
+        &__bg1
+            right: -60%
+        &__circle
+            img
+                width: 100%
+        &__wrap
+            margin-top: 60px
+            margin-bottom: 60px
+        &__img
+            width: 70%
+            height: 140%
+            left: 15%
+            top: -17%
+
+@media (min-width: 768px) and (max-width: 991px)
+    .projectImg
+        &__wrap
+            margin-top: 250px !important
+            margin-bottom: 250px !important
+        &__img
+            left: 25%
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .projectImg
+        &__wrap
+            margin-top: 100px !important
+            margin-bottom: 100px !important
+        &__img
+            left: 30% !important

@@ -1,0 +1,251 @@
+.about-main
+    background-image: url('../img/about-page/bg.png')
+    min-height: calc( 100vh - 80px )
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+.about-us
+    &__inner
+        display: flex
+        justify-content: space-between
+        padding: 140px 0
+    &__title
+        font-weight: 600
+        font-size: 2.625rem
+        line-height: 60px
+        color: $black
+        margin-bottom: 35px
+    &__wrap1
+        width: 48%
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        padding: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__wrap2
+        width: 48%
+        background: $main-color
+        padding-top: 145px
+        padding-bottom: 145px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+    &__description
+        font-weight: 500
+        font-size: 1rem
+        color: $black
+        line-height: 30px
+        p
+            margin-bottom: 15px
+    &__item
+        text-align: center
+        color: $white
+        width: 70%
+        & + .about-us__item
+            border-top: 1px solid rgba(255, 255, 255, 0.2)
+            padding-top: 140px
+        &-title
+            font-weight: 600
+            font-size: 3rem
+            line-height: 64px
+        &-description
+            margin-top: 20px
+            font-weight: 500
+            font-size: 1rem
+            line-height: 30px
+
+.about-modal
+    background: #F7F7F7
+    &__inner
+        padding-top: 140px
+        padding-bottom: 140px
+        background-image: url('../img/about-page/modal-bg.png')
+        background-repeat: no-repeat
+        background-position: center left
+        background-size: 50%
+        display: flex
+        justify-content: flex-end
+    &__wrap
+        width: 48%
+        background: $white
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        box-sizing: border-box
+        box-shadow: 128px 128px 128px rgba(0, 0, 0, 0.1)
+        padding: 80px
+        position: relative
+    &__icon
+        position: absolute
+        top: 0
+        right: 80px
+        img
+            width: 48px
+    &__title
+        margin-top: 40px
+        font-weight: 600
+        font-size: 2.625rem
+        line-height: 50px
+        color: $black
+    &__description
+        margin-top: 35px
+        p
+            & + p
+                margin-top: 15px
+    &__inner2
+        padding-bottom: 85px
+    &__wrap2
+        display: flex
+        justify-content: space-between
+        padding-bottom: 85px
+    &__journal
+        text-align: center
+        font-weight: 500
+        font-size: 1.125rem
+        line-height: 30px
+        color: rgba(0, 0, 0, 0.4)
+        img
+            margin-top: 10px
+            margin-bottom: 20px
+            width: 200px
+    &__staff
+        img
+            width: 250px
+    &__name
+        text-align: center
+        margin-top: 40px
+        font-weight: 600
+        font-size: 2.625rem
+        line-height: 60px
+        color: $black
+
+.about-quote
+    background: $main-color
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2)
+    &__inner
+        padding-top: 125px
+        padding-bottom: 80px
+        background-image: url('../img/about-page/quote.svg')
+        background-repeat: no-repeat
+        background-position: center bottom
+        background-size: 30%
+        position: relative
+    &__arrow
+        position: absolute
+        top: 10px
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__descr
+        font-weight: 500
+        font-style: italic
+        font-size: 1.125rem
+        line-height: 36px
+        text-align: center
+        color: $white
+        padding-left: 30px
+        padding-right: 30px
+
+@media ( max-width: 767px )
+    .about-us
+        &__inner
+            flex-wrap: wrap !important
+        &__wrap1
+            width: 100% !important
+            padding: 50px 40px !important
+            margin-bottom: 25px !important
+        &__wrap2
+            width: 100% !important
+            padding-top: 100px !important
+            padding-bottom: 100px !important
+        &__item
+            & + .about-us__item
+                margin-top: 60px !important
+                padding-top: 50px !important
+
+    .about-modal
+        &__wrap
+            width: 100% !important
+            padding: 40px !important
+        &__icon
+            right: 40px !important
+        &__wrap2
+            flex-wrap: wrap !important
+            justify-content: center !important
+        &__journal
+            img
+                width: 80% !important
+        &__staff
+            padding-top: 50px !important
+            padding-bottom: 50px !important
+            border-top: 1px solid rgba(0, 0, 0, 0.2) !important
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important
+            margin-top: 50px !important
+            margin-bottom: 50px !important
+            img
+                width: 100% !important
+        &__name
+            margin-top: 0 !important
+
+    .about-quote
+        &__inner
+            background-size: 100% !important
+            background-position: center center !important
+        &__descr
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+@media (min-width: 768px) and (max-width: 991px)
+    .about-us
+        &__inner
+            flex-wrap: wrap !important
+        &__wrap1
+            width: 100% !important
+            margin-bottom: 25px !important
+        &__wrap2
+            width: 100% !important
+        &__item
+            & + .about-us__item
+                margin-top: 70px !important
+                padding-top: 70px !important
+
+    .about-modal
+        &__icon
+            right: 60px !important
+            img
+                width: 40px !important
+        &__title
+            font-size: 2.5rem !important
+        &__inner
+            background-position-x: -17% !important
+        &__wrap
+            padding: 40px 30px !important
+            width: 100% !important
+        &__journal
+            img
+                width: 150px !important
+        &__staff
+            img
+                width: 220px !important
+
+    .about-quote
+        &__inner
+            background-size: 60%
+        &__descr
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .about-us
+        &__wrap1
+            padding: 80px 60px !important
+        &__item
+            & + .about-us__item
+                padding-top: 160px !important
+
+    .about-modal
+        &__wrap
+            padding: 60px 60px !important
+
+    .about-quote
+        &__inner
+            background-size: 40% !important

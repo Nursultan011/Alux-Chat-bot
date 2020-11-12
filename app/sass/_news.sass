@@ -1,0 +1,82 @@
+.news
+    &__inner
+        padding-top: 140px
+        padding-bottom: 140px
+    &__wrap
+        display: flex
+        align-items: center
+    &__name
+        font-weight: 500
+        font-size: 1.5rem
+        color: $white
+        padding: 5px 10px
+        background: $main-color
+    &__date
+        margin-left: 40px
+        font-size: 1.5rem
+        font-weight: 500
+        color: $black
+    .title
+        margin-top: 40px
+        text-align: left
+        margin-bottom: 77px
+        padding-left: 0
+    &__description
+        font-size: 1.125rem
+        line-height: 30px
+        font-weight: 500
+        color: $black
+        p
+            & + p
+                margin-top: 40px
+    &__similar
+    &__similar-title
+        font-size: 2rem
+        font-weight: 600
+        color: $black
+        margin-bottom: 70px
+    &__similar-item
+        .news-content__item
+            width: 100%
+
+.socials
+    background: #F7F7F7
+    &__inner
+        padding-top: 40px
+        padding-bottom: 60px
+    &__title
+        font-size: 1.5rem
+        line-height: 64px
+        font-weight: 600
+        color: $black
+    &__wrap
+        margin-top: 30px
+    &__link
+        background: $white
+        padding: 30px
+        & + .socials__link
+            border-left: 1px solid rgba(0, 0, 0, 0.1)
+
+@media (max-width: 767px)
+    .news
+        &__similar
+            margin-top: 60px !important
+
+    .socials
+        &__wrap
+            display: flex !important
+            justify-content: flex-start !important
+            width: 100% !important
+        &__link
+            display: flex !important
+            justify-content: center !important
+            width: 14.2% !important
+            padding-top: 20px !important
+            padding-bottom: 20px !important
+            padding-left: 5px !important
+            padding-right: 5px !important
+
+@media (min-width: 768px) and (max-width: 991px)
+    .news
+        &__similar
+            margin-top: 80px !important

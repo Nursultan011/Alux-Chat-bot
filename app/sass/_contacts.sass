@@ -1,0 +1,112 @@
+.contacts-page
+    position: relative
+    overflow: hidden
+    &__inner
+        padding-top: 12vh
+        padding-bottom: 10vh
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__form
+        width: 36%
+        form
+            width: 100%
+    &__content
+        background: #F7F7F7
+        width: 60%
+        padding: 70px 50px
+    &__bg2
+        position: absolute
+        z-index: -1
+        right: 0
+        bottom: -45%
+    &__bg1
+        position: absolute
+        z-index: 100
+        right: -180px
+        top: 0
+        img
+            width: 70%
+
+    &__bg3
+        position: absolute
+        left: 0
+        top: 10%
+        z-index: -1
+    &__items
+    &__item
+        display: flex
+        padding-right: 30px
+        & + .contacts-page__item
+            margin-top: 100px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                top: -50px
+                left: 0
+                width: 100%
+                height: 1px
+                background: rgba(0, 0, 0, 0.2)
+        img
+            margin-right: 20px
+            width: 64px
+        &-title
+            font-weight: 500
+            font-size: 1.125rem
+            line-height: 36px
+            color: rgba(0, 0, 0, 0.2)
+        &-link
+            font-weight: 600
+            font-size: 1.25rem
+            line-height: 36px
+            color: $black
+            span
+                color: rgba(0, 0, 0, 0.2)
+                margin-left: 3px
+                margin-right: 3px
+            a
+                color: $black
+                &:hover
+                    color: $black
+.maps
+    margin-bottom: -10px
+
+@media (max-width: 767px)
+    .contacts-page
+        &__inner
+            flex-wrap: wrap-reverse !important
+            padding-bottom: 300px !important
+        &__bg2
+            bottom: -400px
+        &__content
+            width: 100% !important
+            border-bottom-left-radius: 30px !important
+            border-top-right-radius: 30px !important
+            padding: 50px 20px !important
+        &__bg1
+            right: -225px !important
+            top: 45px
+            img
+                width: 30% !important
+        &__form
+            margin-top: 35px !important
+            width: 100% !important
+
+@media (min-width: 768px) and (max-width: 991px)
+    .contacts-page
+        &__inner
+            flex-wrap: wrap-reverse !important
+        &__content
+            width: 100% !important
+            border-bottom-left-radius: 30px !important
+        &__form
+            margin-top: 35px !important
+            width: 100% !important
+            display: flex !important
+            justify-content: space-between !important
+            form
+                width: 50% !important
+        &__wrapss
+            width: 48% !important
