@@ -76,11 +76,18 @@
 @media (max-width: 767px)
     .news-content
         &__btns
-            padding-bottom: 5px
+            min-width: 100% !important
+            padding-bottom: 5px !important
             border-bottom: 1px solid rgba(0,0,0, 0.2)
-            justify-content: flex-start !important
+            align-items: center !important
+            justify-content: inherit !important
             overflow: scroll !important
         &__btn
+            padding-top: 5px !important
+            padding-bottom: 5px !important
+            white-space: nowrap !important
+            max-width: 100% !important
+            line-height: 22px !important
             margin-right: 15px !important
             margin-bottom: 10px !important
         &__item
