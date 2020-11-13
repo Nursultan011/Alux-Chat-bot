@@ -55,7 +55,7 @@ $(function () {
     }
 
     function call() {
-        setCount(year, 'year', 30, 15)
+        setCount(year, 'year', 30, 14)
         setCount(worker, 'worker', 30, 25)
         setCount(project, 'project', 1, 500)
     }
