@@ -64,7 +64,7 @@
             >
           </nav>
           <div class="header__wrap">
-            <button class="header__button">Заказать услугу</button>
+            <button class="header__button popup-open">Заказать услугу</button>
             <div class="header__phones">
               <a href="" class="header__phone"
                 ><img src="img/main-page/header-phone.svg" alt="" /> +7 727 317
@@ -412,6 +412,21 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup-fade">
+      <div class="popup">
+        <form class="form" action="">
+          <a class="popup-close" href="#">&times;</a>
+          <input class="input" type="text" placeholder="Ваше имя" />
+          <input class="input" type="text" placeholder="Номер телефона" />
+          <button class="button btn_active">Перезвоните мне</button>
+          <div class="form__subtitle">
+            Нажимая на кнопку вы соглашаетесь на обработку персональных данных
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
